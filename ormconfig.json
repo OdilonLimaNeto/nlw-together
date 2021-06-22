@@ -1,0 +1,14 @@
+{
+    "type": "mysql",
+    "host": "localhost",
+    "port": 3306,
+    "username": "nlw",
+    "password": "nlwtogether",
+    "database": "database",
+    "logging": false,
+    "entities": ["./src/modules/**/entities/*.ts"],
+    "migrations": ["./src/shared/infra/typeorm/migrations/*.ts"],
+    "cli": {
+       "migrationsDir": "./src/shared/infra/typeorm/migrations"
+    }
+}

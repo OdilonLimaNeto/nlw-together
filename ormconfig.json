@@ -4,7 +4,7 @@
     "port": 3306,
     "username": "nlw",
     "password": "nlwtogether",
-    "database": "database",
+    "database": "data",
     "logging": false,
     "entities": ["./src/modules/**/entities/*.ts"],
     "migrations": ["./src/shared/infra/typeorm/migrations/*.ts"],

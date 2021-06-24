@@ -4,7 +4,6 @@ import { IUsersRepository } from "../../../repositories/IUsersRepository";
 import { User } from "../entities/User";
 
 
-
 class UsersRepository implements IUsersRepository {
     private repository: Repository<User>
 

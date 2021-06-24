@@ -17,9 +17,9 @@ class CreateUserUseCase {
         private usersRepository: IUsersRepository
     ) {}
     async execute({ name, email, password, isAdmin }: IRequest): Promise<User> {
-        const emailAlreadyExists = await this.usersRepository.findByEmail(email);
+        const userAlreadyExists = await this.usersRepository.findByEmail(email);
 
-        if(emailAlreadyExists) throw new ApplicationError("Email already exists");
+        if(userAlreadyExists) throw new ApplicationError("User already exists");
 
         const user = await this.usersRepository.create({ name, email, password, isAdmin });
         return user;

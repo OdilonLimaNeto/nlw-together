@@ -28,6 +28,7 @@ export class CreateUser1624418892886 implements MigrationInterface {
                     {
                         name: "isAdmin",
                         type: "tinyint",
+                        default: false
                     },
 
                     {

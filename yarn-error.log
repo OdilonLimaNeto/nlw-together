@@ -1,5 +1,5 @@
 Arguments: 
-  /home/odilon/.nvm/versions/node/v14.17.1/bin/node /home/odilon/.nvm/versions/node/v14.17.1/bin/yarn add ,
+  /home/odilon/.nvm/versions/node/v14.17.1/bin/node /home/odilon/.nvm/versions/node/v14.17.1/bin/yarn add @types/express-async-errors -D
 
 PATH: 
   /home/odilon/.nvm/versions/node/v14.17.1/bin:/home/odilon/.zinit/polaris/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
@@ -14,7 +14,7 @@ Platform:
   linux x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/,: Not found
+  Error: https://registry.yarnpkg.com/@types%2fexpress-async-errors: Not found
       at Request.params.callback [as _callback] (/home/odilon/.nvm/versions/node/v14.17.1/lib/node_modules/yarn/lib/cli.js:66988:18)
       at Request.self.callback (/home/odilon/.nvm/versions/node/v14.17.1/lib/node_modules/yarn/lib/cli.js:140662:22)
       at Request.emit (events.js:375:28)
@@ -41,6 +41,7 @@ npm manifest:
     "dependencies": {
       "cors": "^2.8.5",
       "express": "^4.17.1",
+      "express-async-errors": "^3.1.1",
       "mysql": "^2.18.1",
       "reflect-metadata": "^0.1.13",
       "tsyringe": "^4.5.0",
@@ -526,6 +527,11 @@ Lockfile:
     version "1.8.1"
     resolved "https://registry.yarnpkg.com/etag/-/etag-1.8.1.tgz#41ae2eeb65efa62268aebfea83ac7d79299b0887"
     integrity sha1-Qa4u62XvpiJorr/qg6x9eSmbCIc=
+  
+  express-async-errors@^3.1.1:
+    version "3.1.1"
+    resolved "https://registry.yarnpkg.com/express-async-errors/-/express-async-errors-3.1.1.tgz#6053236d61d21ddef4892d6bd1d736889fc9da41"
+    integrity sha512-h6aK1da4tpqWSbyCa3FxB/V6Ehd4EEB15zyQq9qe75OZBp0krinNKuH4rAY+S/U/2I36vdLAUFSjQJ+TFmODng==
   
   express@^4.17.1:
     version "4.17.1"

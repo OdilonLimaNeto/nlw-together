@@ -1,3 +1,4 @@
+import { hash } from "bcrypt";
 import { inject, injectable } from "tsyringe";
 
 import { ApplicationError } from "../../../../shared/appErrors/AplicationError";
@@ -24,10 +25,12 @@ class CreateUserUseCase {
 
     if (userAlreadyExists) throw new ApplicationError("User already exists");
 
+    const hashPassword = await hash(password, 8);
+
     const user = await this.usersRepository.create({
       name,
       email,
-      password,
+      password: hashPassword,
       isAdmin,
     });
     return user;
